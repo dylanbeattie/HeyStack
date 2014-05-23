@@ -19,8 +19,8 @@ namespace HeyStack.Api.Server {
             public AppHost() : base("HeyStack Demo", typeof(StatusService).Assembly) { }
 
             public override void Configure(Funq.Container container) {
-                //register any dependencies your services use, e.g:
-                //container.Register<ICacheClient>(new MemoryCacheClient());
+                container.Register<IHost>(c => new MyHost());
+                container.Register<IClock>(c => new MyClock());
             }
         }
     }
