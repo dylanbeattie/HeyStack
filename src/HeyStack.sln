@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyStack.DemoApp", "HeyStac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyStack.Api.Server.UnitTests", "HeyStack.Api.Server.UnitTests\HeyStack.Api.Server.UnitTests.csproj", "{5D04A7D8-5B3F-4A34-A55B-F7E82E98280C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyStack.Api.Server.IntegrationTests", "HeyStack.Api.Server.IntegrationTests\HeyStack.Api.Server.IntegrationTests.csproj", "{0C46578D-E625-41AC-9574-A5341DAE0C7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5D04A7D8-5B3F-4A34-A55B-F7E82E98280C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D04A7D8-5B3F-4A34-A55B-F7E82E98280C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D04A7D8-5B3F-4A34-A55B-F7E82E98280C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C46578D-E625-41AC-9574-A5341DAE0C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C46578D-E625-41AC-9574-A5341DAE0C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C46578D-E625-41AC-9574-A5341DAE0C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C46578D-E625-41AC-9574-A5341DAE0C7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
