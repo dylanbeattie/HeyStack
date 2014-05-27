@@ -6,6 +6,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using HeyStack.Api.Server.Services;
 using ServiceStack;
+using ServiceStack.Api.Swagger;
 
 namespace HeyStack.Api.Server {
     public class Global : HttpApplication {
@@ -19,6 +20,9 @@ namespace HeyStack.Api.Server {
             public AppHost() : base("HeyStack Demo", typeof(StatusService).Assembly) { }
 
             public override void Configure(Funq.Container container) {
+
+                Plugins.Add(new SwaggerFeature());
+
                 container.Register<IHost>(c => new MyHost());
                 container.Register<IClock>(c => new MyClock());
             }
