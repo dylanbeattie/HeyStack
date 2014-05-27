@@ -61,6 +61,12 @@
     <Reference Include="ServiceStack.Interfaces">
       <HintPath>..\packages\ServiceStack.Interfaces.4.0.20\lib\net40\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>..\packages\ServiceStack.OrmLite.4.0.20\lib\net40\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer">
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.4.0.20\lib\net40\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="ServiceStack.Text">
       <HintPath>..\packages\ServiceStack.Text.4.0.20\lib\net40\ServiceStack.Text.dll</HintPath>
     </Reference>
@@ -115,8 +121,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Data\IMovieDatabase.cs" />
+    <Compile Include="Services\Data\Movie.cs" />
+    <Compile Include="Services\Data\SqlMovieDatabase.cs" />
     <Compile Include="Services\IClock.cs" />
     <Compile Include="Services\IHost.cs" />
+    <Compile Include="Services\MovieService.cs" />
     <Compile Include="Services\MyClock.cs" />
     <Compile Include="Services\MyHost.cs" />
     <Compile Include="Services\StatusService.cs" />
