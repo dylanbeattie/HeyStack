@@ -16,7 +16,7 @@ namespace HeyStack.Api.Server.Services {
         }
 
         public StatusResultDto Get(GetStatusDto request) {
-            var message = String.Format("{0} at {1} is OK",
+            var message = String.Format("{0} at {1:O} is OK",
                 host.MachineName, clock.Now);
             return new StatusResultDto { Status = message };
         }
