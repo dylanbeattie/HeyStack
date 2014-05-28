@@ -65,7 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IWrapYourApi.cs" />
+    <Compile Include="LocalApiWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusServiceTestBase.cs" />
     <Compile Include="StatusServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>

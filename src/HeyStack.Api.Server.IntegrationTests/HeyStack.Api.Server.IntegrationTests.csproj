@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\JsonApiWrapper.cs" />
+    <Compile Include="Services\JsonStatusServiceTests.cs" />
     <Compile Include="Services\StatusServiceTests.cs" />
     <Compile Include="Services\TestableAppHost.cs" />
   </ItemGroup>
@@ -73,6 +75,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HeyStack.Api.Server.UnitTests\HeyStack.Api.Server.UnitTests.csproj">
+      <Project>{5D04A7D8-5B3F-4A34-A55B-F7E82E98280C}</Project>
+      <Name>HeyStack.Api.Server.UnitTests</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HeyStack.Api.Server\HeyStack.Api.Server.csproj">
       <Project>{7D06D932-D1FA-443C-965B-5FBB726B4EB1}</Project>
       <Name>HeyStack.Api.Server</Name>
